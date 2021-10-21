@@ -120,6 +120,12 @@ body h2 {
   padding: 15px;
 }
 
+.programa h2 {
+  font-size: 1.6rem;
+  padding-left: 10px;
+  color: #333333;
+}
+
 .programa_fila {
   margin: 10px;
   border-radius: 10px;
@@ -196,4 +202,21 @@ body h2 {
   color: white;
   text-decoration: none;
   font-size: 12px;
+}
+/*----------------------------------------------------------------------------------------------------*/
+@media (min-width: 576px) {
+  .prog_col_izq {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f1f1f1;
+  }
+  .btn-materias {
+    width: 100%;
+  }
+  .contenido_col_derecha {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
 }
