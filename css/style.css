@@ -156,6 +156,57 @@ body h2 {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/* Nuevo estilo de chips/píldoras para materias */
+.btn-materia {
+  display: inline-block;
+  padding: 6px 14px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #cb2d3e;
+  color: #cb2d3e;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-materia:hover,
+.btn-materia:focus {
+  background-color: #cb2d3e;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(203,45,62,0.35);
+}
+.btn-materia:active {
+  transform: translateY(1px);
+}
+
+/* Separador de cuatrimestres en listas de materias */
+.materias-separador {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 8px 0 12px;
+}
+.materias-separador:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px dashed #dddddd;
+}
+.materias-separador span {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  color: #777777;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0 8px;
+}
+
 .anios {
   width: 80px;
   height: 80px;
@@ -202,6 +253,63 @@ body h2 {
   color: white;
   text-decoration: none;
   font-size: 12px;
+}
+/* Botones de año en acordeón */
+.year-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #cb2d3e; /* fallback */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ef473a,
+    #cb2d3e
+  );
+  background: linear-gradient(
+    to bottom,
+    #ef473a,
+    #cb2d3e
+  );
+  color: #ffffff;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(203, 45, 62, 0.25);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+.year-toggle:hover,
+.year-toggle:focus {
+  background: #cb2d3e;
+  background: -webkit-linear-gradient(
+    to bottom,
+    #f05a4c,
+    #d03646
+  );
+  background: linear-gradient(
+    to bottom,
+    #f05a4c,
+    #d03646
+  );
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(203, 45, 62, 0.35);
+}
+.year-toggle:after {
+  content: "\25BC"; /* triángulo hacia abajo */
+  font-size: 12px;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+[aria-expanded="true"].year-toggle:after {
+  transform: rotate(180deg);
+}
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
 }
 /*----------------------------------------------------------------------------------------------------*/
 @media (min-width: 576px) {
