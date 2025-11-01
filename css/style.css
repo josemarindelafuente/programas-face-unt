@@ -2,21 +2,7 @@ body {
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background: #ada996; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #eaeaea,
-    #dbdbdb,
-    #f2f2f2,
-    #ada996
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #eaeaea,
-    #dbdbdb,
-    #f2f2f2,
-    #ada996
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: white;
   /*display: flex;
     justify-content: center;
     align-items: center;*/
@@ -254,17 +240,7 @@ body h2 {
 
 .footer {
   height: 60px;
-  background: #232526; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #414345,
-    #232526
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #414345,
-    #232526
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: transparent;
   margin-top: 50px;
 }
 .footer a {
